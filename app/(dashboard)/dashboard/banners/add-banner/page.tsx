@@ -1,4 +1,5 @@
 // import BannerForm from '@/components/dashboard/forms/BannerForm'
+import dynamic from 'next/dynamic';
 const BannerForm = dynamic(
   () => import('@/components/dashboard/forms/BannerForm'),
   { ssr: false } // This prevents server-side rendering
@@ -6,7 +7,6 @@ const BannerForm = dynamic(
 
 import BreadcrumbComponent from '@/components/others/Breadcrumb'
 import React from 'react'
-import dynamic from 'next/dynamic';
 
 const AddBannerPage = () => {
   return (
