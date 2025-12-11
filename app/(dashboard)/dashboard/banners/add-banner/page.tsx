@@ -1,3 +1,4 @@
+"use client"
 import BannerForm from '@/components/dashboard/forms/BannerForm'
 import BreadcrumbComponent from '@/components/others/Breadcrumb'
 import React from 'react'
