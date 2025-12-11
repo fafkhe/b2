@@ -64,9 +64,9 @@ const BannerOne = () => {
             <Image 
               src="/images/banner/38.png" 
               className="object-contain transform hover:scale-105 transition-transform duration-500" 
-              // fill 
-              width={300}
-              height={300}
+              fill 
+              // width={300}
+              // height={300}
               alt="لباس زیر با کیفیت"
               priority
             />
