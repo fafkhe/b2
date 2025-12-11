@@ -33,7 +33,7 @@ const CategoriesCollection = () => {
   const { data: products = {}, isLoading, error } = useQuery({
     queryKey: ["products"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:3001/product/suggestion" , {method : 'GET'});
+      const response = await fetch("https://gateway.sunellyshop.com/product/suggestion" , {method : 'GET'});
       if (!response.ok) {
         throw new Error("Failed to fetch products");
       }

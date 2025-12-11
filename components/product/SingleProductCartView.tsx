@@ -50,11 +50,11 @@ const SingleProductCartView = ({ product }: { product: productsType }) => {
           <Image className="object-contain" src={pictures[0]} alt={name} fill />
           {count === 0 ? (
             <p className="py-1 px-4 text-sm font-bold rounded-sm bg-rose-500 text-white absolute top-2 right-2">
-              out of stock
+              اتمام موجودی
             </p>
           ) : (
             <p className="py-1 px-4 text-sm font-bold rounded-sm bg-rose-500 text-white absolute top-2 right-2">
-              {product.discount}% off
+              {product.discount}% تخفیف
             </p>
           )}
         </div>
@@ -79,10 +79,11 @@ const SingleProductCartView = ({ product }: { product: productsType }) => {
         </h3>
         {/* <RatingReview rating={10} review={reviews.length} /> */}
         <div className="text-lg font-bold space-x-3 ">
-          <span className="line-through text-muted-foreground">${price}</span>
-          <span className="text-xl font-bold text-green-500">
-            ${discountedPrice.toFixed(2)}
+          <span className="line-through text-muted-foreground">{price}</span>
+          <span className="text-xl  font-bold text-green-500">
+            {discountedPrice.toFixed(2)}
           </span>
+          <span className="">تومان</span>
         </div>
       </div>
     </Link>

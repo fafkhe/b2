@@ -67,22 +67,21 @@ const HeroBannerOne = () => {
                   </Link>
                 </motion.div>
 
-                <motion.div
+                {/* <motion.div
                   initial={{ x: 200, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  {/* main product image */}
                   <Image
-                    className="bg-transparent rotate-6 relative z-50 object-contain"
+                    className="bg-transparent rotate-6  relative z-50 object-contain"
                     src={data.images[0]}
                     width={100}
                     height={100}
                     alt="banner image"
                   />
-                </motion.div>
+                </motion.div> */}
                 {/* Animated Sparkles */}
-                <motion.div
+                {/* <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
@@ -91,7 +90,7 @@ const HeroBannerOne = () => {
                   <div className="absolute w-48 h-48 bg-yellow-400 rounded-full animate-blob1"></div>
                   <div className="absolute w-48 h-48 bg-red-400 rounded-full animate-blob2"></div>
                   <div className="absolute w-48 h-48 bg-blue-400 rounded-full animate-blob3"></div>
-                </motion.div>
+                </motion.div> */}
               </CarouselItem>
             ))}
           </CarouselContent>

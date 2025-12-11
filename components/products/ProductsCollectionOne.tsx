@@ -18,7 +18,7 @@ const ProductsCollectionOne = () => {
     const { data = [], isLoading, error } = useQuery({
     queryKey: ["all"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:3001/product/" , {method : 'GET'});
+      const response = await fetch("https://gateway.sunellyshop.com/product/" , {method : 'GET'});
       if (!response.ok) {
         throw new Error("Failed to fetch products");
       }
