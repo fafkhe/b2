@@ -59,7 +59,7 @@ const CategoriesCollection = () => {
 
   return (
     <section className="py-16 bg-slate-200 dark:bg-slate-800 ">
-      <div className="max-w-screen-xl px-4 md:px-8  mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-wrap">
+      <div className="max-w-screen-xl px-4 md:px-8 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-wrap">
         {/* showing mensShort collection */}
         <div
           onClick={() => handleCollectionClick(mensShort[0].category)}
