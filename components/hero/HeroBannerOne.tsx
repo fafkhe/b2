@@ -76,8 +76,8 @@ const HeroBannerOne = () => {
                   <Image
                     className="bg-transparent rotate-6 relative z-50 object-contain"
                     src={data.images[0]}
-                    width={150}
-                    height={150}
+                    width={100}
+                    height={100}
                     alt="banner image"
                   />
                 </motion.div>
